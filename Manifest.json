@@ -1,0 +1,17 @@
+{
+    "name": "FastSMARTBOOK",
+    "description": "Long Smartbook assignment? Fear not, because this bot will solve each question and simultaneously provide flashcards to learn each concept, while you can do whatever in the back.",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "icons": {},
+    "content_scripts":[{
+        "matches": ["<all_urls>"],
+        "js":["contentScript.js"],
+        "run_at": "document_end" 
+    }],
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage"
+    ]
+}
